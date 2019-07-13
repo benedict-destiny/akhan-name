@@ -4,13 +4,13 @@ The akhan name calculator is an interactive website that takes in user birth dat
 ## How to access.
 Follow the link below to access the project "https://benedict-destiny.github.io/akhan-name/".
 
-## Usage.
+### Usage.
 To know your Akhan name, fill in the forms with your correct details and submit.
 
-## Contributing.
+#### Contributing.
 Pull requests are welcome. You are allowed to change the code to your preferences.
 
-## Licence.
+##### Licence.
 Licence
                              Apache License
                        Version 2.0, January 2004
