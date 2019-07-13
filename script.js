@@ -1,6 +1,6 @@
 var days=["sunday","monday","tuesday","wenesday","thursady","friday","saturday",]
-var namesMale=[]
-var namesFemale=[]
+var namesMale=["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"]
+var namesFemale=["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"]
 function test(){
     var gender=document.forms["akhan"]["gender"].value
     var century=document.forms["akhan"]["century"].value
