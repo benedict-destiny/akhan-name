@@ -6,6 +6,13 @@
         <link href="css/styles.css" rel="stylesheet" type="text/css">
     </head>
     <body>
+        <div class="card-header">
+            <h1>Discover your Akhan name here</h1>
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="index.html">Akhan name finder</a></li>
+            </ul>
+        </div>
         <div class="container">
         <form name="akhan" onsubmit="return test()">
             <div class="form-group">
@@ -19,9 +26,12 @@
                 <input class="form-control" type="number" name="year" id="year" placeholder="2030" min="1800" max=""><br>
                 <label for="month">month</label>
                 <input class="form-control" type="number" name="month" id="month" min="1" max="12"><br>
-                <label for="date">date</label>
-                <input class="form-control" type="number" name="date" id="date" placeholder="30" min="1" max="30"><br>
+                <label for="date">Date</label>
+                <input class="form-control" type="number" name="Date" id="Date" placeholder="30" min="1" max="30"><br>
+                <br><br>
+                <div id="submit">
                 <input type="submit" class="btn btn-primary" value="submit">
+                </div>
 
        
             </div>
