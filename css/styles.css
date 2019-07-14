@@ -1,10 +1,12 @@
 .card-header{
-    background-color:rgba(255, 145, 0, 0.719);
+    background-image: url("images/akhan.png");
+    padding: 400px;
 }
+
 .h1 h1{
     text-align: center;
     font-family: verdana;
-    font-size: 50px;
+    font-size: 90px;
     color: bisque;
     
 }
@@ -17,8 +19,8 @@ a:hover{
     color: rgb(212, 88, 16);
     cursor: cell;
 }
-li{
-    text-align: center;
+.card-header2 li{
+    align: center;
     display: inline;
     padding: 15px;
 }
