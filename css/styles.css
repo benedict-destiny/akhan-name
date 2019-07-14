@@ -2,6 +2,7 @@
     background-image: url("images/akhan.png");
     padding: 300px;
     background-attachment: fixed;
+    background-size: 100% 100%;
 }
 
 .h1 h1{
@@ -39,4 +40,8 @@ a:hover{
 p{
     color: rgb(10, 2, 2);
     font-size: 20px;
+}
+.form-group p{
+    text-align: center;
+    font-size: 30px;
 }

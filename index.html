@@ -17,14 +17,8 @@
                 <li><a href="index.html">Akhan name finder</a></li>
             </ul>
         </div>
-        <div class="container">
-        
-            </div>
-        </form>
-        
-            
-    </div>
     <div class="form-group">
+        <p>fill in the form below with the required details and hit Submit</p>
             <label for="">Gender</label>
             <select class="custom-select" id="gender" name="Gender">
               <option value="1">Male</option>
@@ -38,15 +32,17 @@
           <div class="form-group">
             <label for="">Month</label>
             <input  class="form-control" type="number" id="month" name="" placeholder="eg 1 for January"> 
-              
           </div>
           <div class="form-group">
             <label for="">Date of birth</label>
-            <input type="number" class="form-control" id="dayBorn" name="" min="1" max="30" placeholder="eg 3 for date 3">
+            <input type="number" class="form-control" id="date" name="" min="1" max="30" placeholder="eg 3 for date 3">
           </div>
+          <input type="textarea" name="output" id="output">
+          <div class="form-group">
           <div class="form-group">
             <button type="button" onclick="giveName();selectGender();giveYear();giveMonth();giveDay();validYear();validDay();getName();clearForm();" class="btn btn-secondary">Submit</button>
           </div>
+        </div>
         </form>
       </div>
     </div>
