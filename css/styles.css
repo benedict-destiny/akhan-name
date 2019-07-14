@@ -1,6 +1,7 @@
 .card-header{
     background-image: url("images/akhan.png");
-    padding: 400px;
+    padding: 300px;
+    background-attachment: fixed;
 }
 
 .h1 h1{

@@ -7,38 +7,50 @@
     </head>
     <body>
         <div class="card-header">
+            <div class="h1">
             <h1>Discover your Akhan name here</h1>
+            </div>
+        </div>
+        <div class="card-header2">
             <ul>
                 <li><a href="main.html">Home</a></li>
                 <li><a href="index.html">Akhan name finder</a></li>
             </ul>
         </div>
         <div class="container">
-        <form name="akhan" onsubmit="return test()">
-            <div class="form-group">
-                <label for="male">male</label>
-                <input class="form-control" type="radio" name="gender" value="male">
-                <label for="female">female</label>
-                <input  class="form-control" type="radio" name="gender" value="female">
-                <label for="century">century</label>
-                <input class="form-control" type="number" name="century" id="century" placeholder="20th century" min="17" max="100"><br>
-                <label for="year" name="year">year</label>
-                <input class="form-control" type="number" name="year" id="year" placeholder="2030" min="1800" max=""><br>
-                <label for="month">month</label>
-                <input class="form-control" type="number" name="month" id="month" placeholder="1 for January e.t.c" min="1" max="12"><br>
-                <label for="date">Date</label>
-                <input class="form-control" type="number" name="Date" id="Date" placeholder="30" min="1" max="30"><br>
-                <br><br>
-                <div id="submit">
-                <input type="submit" class="btn btn-primary" value="submit">
-                </div>
-
-       
+        
             </div>
         </form>
         
             
     </div>
+    <div class="form-group">
+            <label for="">Gender</label>
+            <select class="custom-select" id="gender" name="Gender">
+              <option value="1">Male</option>
+              <option value="2">Female</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="">Year</label>
+            <input type="number" class="form-control" id="year" placeholder="eg 2000" onkeyup="digits(this)" name="year" value="" min="1800" max="">
+          </div>
+          <div class="form-group">
+            <label for="">Month</label>
+            <input  class="form-control" type="number" id="month" name="" placeholder="eg 1 for January"> 
+              
+          </div>
+          <div class="form-group">
+            <label for="">Date of birth</label>
+            <input type="number" class="form-control" id="dayBorn" name="" min="1" max="30" placeholder="eg 3 for date 3">
+          </div>
+          <div class="form-group">
+            <button type="button" onclick="giveName();selectGender();giveYear();giveMonth();giveDay();validYear();validDay();getName();clearForm();" class="btn btn-secondary">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
     <script src="script.js"></script>
     </body>
 
