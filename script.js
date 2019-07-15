@@ -55,7 +55,7 @@ function digits(input){
 
 function validYear(){
   var year = document.getElementById('year').value;
-  if (year < 1899 || year > currentYear) {
+  if (year < 1899 || year > 2030) {
     alert("Invalid Year");
     return false;
   }
