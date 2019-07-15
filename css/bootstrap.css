@@ -544,13 +544,7 @@ pre code {
   max-height: 340px;
   overflow-y: scroll;
 }
-.container-yangu{
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
+
 .container {
   width: 100%;
   padding-right: 15px;
@@ -2433,8 +2427,8 @@ fieldset:disabled a.btn {
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #d95000;
-  border-color: #d87d05;
+  background-color: #0069d9;
+  border-color: #0062cc;
 }
 
 .btn-primary:focus, .btn-primary.focus {

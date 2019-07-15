@@ -8,7 +8,7 @@
     text-align: center;
     font-family: verdana;
     font-size: 90px;
-    color: rgb(153, 94, 23);
+    color: rgb(255, 251, 246);
     
 }
 a{
@@ -20,7 +20,7 @@ a:hover{
     color: rgb(212, 88, 16);
     cursor: cell;
 }
-.card-header2 li{
+.card-header li{
     align: center;
     display: inline;
     padding: 15px;
