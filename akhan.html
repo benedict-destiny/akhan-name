@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" href="images/icon.png">
+        <title>Ahan Name finder</title>
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+        <link href="css/styles.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div class="card-header">
+            <div class="h1">
+            <h1>Discover your Akhan name here</h1>
+            </div>
+        </div>
+        <div class="sticky-top bg-warning mine">
+            <ul class="nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="akhan.html">Akhan name finder</a>
+              </li>
+          </ul>
+            </div>
+            <p>Fill in The form below to know your Akhan name</p>
+        <div class="card-body">
+              <form class="" id="form" action="index.html" method="post">
+                <div class="form-group">
+                  <label for="">Enter Your Name</label>
+                  <input type="text" class="form-control" id="yourNames" placeholder="e.g John" onkeyup="allLetters(this)" name="your name">
+                </div>
+                <div class="form-group">
+                  <label for="">Gender</label>
+                  <select class="custom-select" id="gender" name="Gender">
+                    <option value="1">Gender...</option>
+                    <option value="2">Male</option>
+                    <option value="3">Female</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="">Year of birth</label>
+                  <input type="number" class="form-control" id="year" placeholder="eg 2012" onkeyup="digits(this)" name="year" value="">
+                </div>
+                <div class="form-group">
+                  <label for="">birth month</label>
+                  <input class="form-control" id="month" placeholder="eg 1 for january" name="">
+                </div>
+                <div class="form-group">
+                  <label for="">Date of birth</label>
+                  <input type="number" class="form-control" placeholder="eg 13" id="date" name="">
+                </div>
+                <div class="form-group">
+                  <button type="button" onclick="giveName();selectGender();giveYear();giveMonth();giveDay();validYear();validDay();getName();clearForm();" class="btn btn-primary">Submit</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-title" id="results">
+              <h2>HERE IS YOUR AKHAN NAME</h2>
+            </div>
+            <div class="card-body" id="results-card">
+              <form class="result" id="answer" action="index.html" method="post">
+                <div class="form-control">
+                  <input type="textarea" name="output" id="output">
+                </div>
+                <div class="form-control">
+                  <button type="button" class="btn btn-primary" onclick="clearResult()" name="button">Clear</button>
+                </div>
+              </form>
+            </div>
+      </div>
+    </div>
+  </div>
+    <script src="script.js"></script>
+    </body>
+
+</html>
