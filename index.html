@@ -17,47 +17,43 @@
                 <li><a href="index.html">Akhan name finder</a></li>
             </ul>
         </div>
-        <div class="form-group">
-          <label for="">Gender</label>
-          <select class="custom-select" id="gender" name="Gender">
-            <option value="1">Gender...</option>
-            <option value="2">Male</option>
-            <option value="3">Female</option>
-          </select>
+    <div class="form-group">
+        <p>fill in the form below with the required details and hit Submit</p>
+            <label for="">Gender</label>
+            <select class="custom-select" id="gender" name="Gender">
+              <option value="1">Male</option>
+              <option value="2">Female</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="">Year</label>
+            <input type="number" class="form-control" id="year" placeholder="eg 2000" onkeyup="digits(this)" name="year" value="" min="1800" max="">
+          </div>
+          <div class="form-group">
+            <label for="">Month</label>
+            <input  class="form-control" type="number" id="month" name="" placeholder="eg 1 for January"> 
+          </div>
+          <div class="form-group">
+            <label for="">Date of birth</label>
+            <input type="number" class="form-control" id="date" name="" min="1" max="30" placeholder="eg 3 for date 3">
+          </div>
+          <input type="textarea" name="output" id="output">
+          <div class="form-group">
+            <button type="button" onclick="giveName();selectGender();giveYear();giveMonth();giveDay();validYear();validDay();getName();clearForm();" class="btn btn-secondary">Submit</button>
+          </div>
         </div>
-        <div class="form-group">
-          <label for="">Year Born</label>
-          <input type="number" class="form-control" id="yearBorn" onkeyup="digits(this)" name="year" value="">
-        </div>
-        <div class="form-group">
-          <label for="">Month Born</label>
-          <input type="number" class="form-control" id="monthBorn" placeholder="eg 1 for January" name="">
-        </div>
-        <div class="form-group">
-          <label for="">Day Born</label>
-          <input type="number" class="form-control" id="dayBorn" name="">
-        </div>
-        <div class="form-group">
-          <button type="button" onclick="giveName();selectGender();giveYear();giveMonth();giveDay();validYear();validDay();getName();clearForm();" class="btn btn-secondary">Submit</button>
-        </div>
-      </form>
+        <div class="card-body" id="results-card">
+          <form class="result" id="answer" action="index.html" method="post">
+            <div class="form-group">
+              <input type="textarea" name="output" id="output">
+            </div>
+            <div class="form-group">
+              <button type="button" class="btn btn-secondary" onclick="clearResult()" name="button">Clear</button>
+            </div>
+        </form>
+      </div>
     </div>
   </div>
-</div>
-<div class="col-md-6">
-  <div class="card">
-    <div class="card-title" id="results">
-      <h2>Results</h2>
-    </div>
-    <div class="card-body" id="results-card">
-      <form class="result" id="answer" action="index.html" method="post">
-        <div class="form-group">
-          <input type="textarea" name="output" id="output">
-        </div>
-        <div class="form-group">
-          <button type="button" class="btn btn-secondary" onclick="clearResult()" name="button">Clear</button>
-        </div>
-      </form>
     <script src="script.js"></script>
     </body>
 

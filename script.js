@@ -1,13 +1,6 @@
 var currentDate = new Date();
 var currentYear = currentDate.getFullYear();
 
-function giveName() {
-  var name = document.getElementById("yourNames").value;
-  if (name == "") {
-    alert("Name must be filled out");
-    return false;
-  }
-}
 
 function selectGender() {
   var gender = document.getElementById("gender").value;
@@ -19,7 +12,7 @@ function selectGender() {
 
 
 function giveYear() {
-  var year = document.getElementById("yearBorn").value;
+  var year = document.getElementById("year").value;
   if (year == "") {
     alert("Year must be filled out");
     return false;
@@ -28,7 +21,7 @@ function giveYear() {
 
 
 function giveMonth() {
-  var month = document.getElementById("monthBorn").value;
+  var month = document.getElementById("month").value;
   if (month == "0") {
     alert("Month must be selected");
     return false;
@@ -36,7 +29,7 @@ function giveMonth() {
 }
 
 function giveDay() {
-  var day = document.getElementById("dayBorn").value;
+  var day = document.getElementById("date").value;
   if (day == "") {
     alert("Day must be filled out");
     return false;
@@ -54,7 +47,7 @@ function digits(input){
 }
 
 function validYear(){
-  var year = document.getElementById('yearBorn').value;
+  var year = document.getElementById('year').value;
   if (year < 1899 || year > currentYear) {
     alert("Invalid Year");
     return false;
@@ -64,9 +57,9 @@ function validYear(){
 
 function validDay(){
   var thirtyOneMonths = [1, 3, 5, 7, 9, 10, 12];
-  var monthNumber = parseInt(document.getElementById("monthBorn").value);
-  var dayNumber = parseInt(document.getElementById("dayBorn").value);
-  var yearNumber = parseInt(document.getElementById("yearBorn").value);
+  var monthNumber = parseInt(document.getElementById("month").value);
+  var dayNumber = parseInt(document.getElementById("date").value);
+  var yearNumber = parseInt(document.getElementById("year").value);
   var a = yearNumber % 100;
   var b = yearNumber % 400;
   var c = yearNumber % 4;
@@ -106,31 +99,6 @@ function getName(){
       document.getElementById("output").value = "Born on Sunday: Akan Name would be: " + akanMale[0];
       return true;
     }
-    else if (akanDay === 'Monday') {
-      document.getElementById("output").value = "Born on Monday: Akan Name would be: " + akanMale[1];
-      return true;
-    }
-    else if (akanDay === 'Tuesday') {
-      document.getElementById("output").value = "Born on Tuesday: Akan Name would be: " + akanMale[2];
-      return true;
-    }
-    else if (akanDay === 'Wednesday') {
-      document.getElementById("output").value = "Born on Wednesday: Akan Name would be: " + akanMale[3];
-      return true;
-    }
-    else if (akanDay === 'Thursday') {
-      document.getElementById("output").value = "Born on Thursday: Akan Name would be: " + akanMale[4];
-      return true;
-    }
-    else if (akanDay === 'Friday') {
-      document.getElementById("output").value = "Born on Friday: Akan Name would be: " + akanMale[5];
-      return true;
-    }
-    else {
-      document.getElementById("output").value = "Born on Saturday: Akan Name would be: " + akanMale[6];
-      return true;
-    }
-  }
     if (gender == 3) {
       if (akanDay === 'Sunday') {
         document.getElementById("output").value = "Born on Sunday: Akan Name would be: " + akanFemale[0];
@@ -161,14 +129,4 @@ function getName(){
         return true;
       }
     }
-}
-
-
-
-function clearForm(){
-  document.getElementById("form").reset();
-}
-
-function clearResult(){
-  document.getElementById("answer").reset();
 }
